@@ -5,10 +5,12 @@ import java.util.stream.Collectors
 class VowelTrollRemover {
 
     fun remove(keyword: String): String {
+        val vowels = listOf<Char>('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+        
         return keyword
             .chars()
             .mapToObj { it.toChar() }
-            .filter { it != 'a' && it != 'e' && it != 'i' && it != 'o' && it != 'u' && it != 'A' && it != 'E' && it != 'I' && it != 'O' && it != 'U' }
+            .filter { !vowels.contains(it) }
             .map { it.toString() }
             .collect(Collectors.joining())
     }
