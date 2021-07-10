@@ -4,14 +4,12 @@ import java.util.stream.Collectors
 
 class VowelTrollRemover {
 
-    fun remove(keyword: String) : String {
+    fun remove(keyword: String): String {
         return keyword
             .chars()
-            .mapToObj { ch -> ch.toChar() }
-            .filter { ch ->
-                ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u' && ch != 'A' && ch != 'E' && ch != 'I' && ch != 'O' && ch != 'U'
-            }
-            .map { ch -> ch.toString() }
+            .mapToObj { it.toChar() }
+            .filter { it != 'a' && it != 'e' && it != 'i' && it != 'o' && it != 'u' && it != 'A' && it != 'E' && it != 'I' && it != 'O' && it != 'U' }
+            .map { it.toString() }
             .collect(Collectors.joining())
     }
 }

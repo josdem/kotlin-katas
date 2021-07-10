@@ -1,6 +1,5 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.5.10'
-    id 'com.github.sherter.google-java-format' version '0.9'
 }
 
 def junitJupiterVersion = '5.7.0'
@@ -21,5 +20,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-test.dependsOn rootProject.tasks['googleJavaFormat']
