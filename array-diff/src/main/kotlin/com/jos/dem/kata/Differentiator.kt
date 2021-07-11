@@ -8,7 +8,7 @@ It should remove all values from list a, which are present in list b keeping the
 class Differentiator {
 
     fun diff(a: IntArray, b: IntArray): IntArray {
-        return a
+        return a.filter { !b.contains(it) }.toIntArray()
     }
 
 }
