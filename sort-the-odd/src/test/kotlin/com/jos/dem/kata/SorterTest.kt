@@ -14,11 +14,6 @@ class SorterTest {
     }
 
     @Test
-    fun `should sort an empty array`() {
-        assertArrayEquals(intArrayOf(), sorter.sort(intArrayOf()));
-    }
-
-    @Test
     fun `should sort duplicated elements array`(){
         assertArrayEquals(
             intArrayOf(1, 1, 5, 11, 2, 11, 111, 0),
