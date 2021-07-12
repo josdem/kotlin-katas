@@ -5,6 +5,7 @@ Write a function that accepts an array of 10 integers (between 0 and 9), that re
  */
 
 class PhoneNumberGenerator {
+    
     fun format(array: IntArray): String {
         val arrayAsString = array.joinToString("")
         return "(${arrayAsString.substring(0..2)}) ${arrayAsString.substring(3..5)}-${arrayAsString.substring(6)}"
