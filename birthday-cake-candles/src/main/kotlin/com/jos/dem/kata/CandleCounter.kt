@@ -7,7 +7,8 @@ Your task is to create a function that removes all small candles and just keep t
 
 class CandleCounter {
     fun count(candles: List<Int>): List<Int> {
-        return candles
+        val biggest = candles.maxOrNull() ?: 0
+        return candles.filter { it === biggest }
     }
 
 }
