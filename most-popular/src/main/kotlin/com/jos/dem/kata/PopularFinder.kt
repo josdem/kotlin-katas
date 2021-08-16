@@ -8,7 +8,7 @@ Write a function that finds most popular number in the array, in this case 34 be
 class PopularFinder {
     
     fun find(numbers: List<Int>): Int {
-        return numbers.size
+        return numbers.groupBy { it }.maxByOrNull { it.value.size }?.key!!
     }
 
 }
