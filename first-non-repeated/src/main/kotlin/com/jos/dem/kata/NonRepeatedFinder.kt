@@ -6,9 +6,9 @@ When we have: [25, 25, 18, 18, 18, 36, 1, 2, 2, 34] first non-repeated number is
  */
 
 class NonRepeatedFinder {
-    
+
     fun find(numbers: List<Int>): Int {
-        return numbers.size
+        return numbers.groupBy { it }.filter { it.value.size == 1 }.keys.elementAt(0)
     }
 
 }
