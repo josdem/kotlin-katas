@@ -6,13 +6,14 @@ import org.junit.jupiter.api.Test
 
 class CommonElementsTest {
 
-  private val commonElements: CommonElements = CommonElements()
+    private val commonElements: CommonElements = CommonElements()
 
-  @Test
-  @DisplayName("find common elements")
-  fun shouldFindCommonElements() {
-    assertEquals(
-        listOf(1, 3, 5),
-        commonElements.find(listOf(1, 2, 3, 4, 5), listOf(1, 3, 5, 7, 9)));
-  }
+    @Test
+    @DisplayName("find common elements")
+    fun shouldFindCommonElements() {
+        assertEquals(
+            listOf(1, 3, 5),
+            commonElements.find(listOf(1, 2, 3, 4, 5), listOf(1, 3, 5, 7, 9))
+        );
+    }
 }

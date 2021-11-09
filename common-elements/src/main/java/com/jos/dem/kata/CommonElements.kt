@@ -9,7 +9,7 @@ Output: [1, 3 ,5]
 
 class CommonElements {
 
-  fun find(first: List<Int>, second: List<Int>): List<Int> {
-    return first
-  }
+    fun find(first: List<Int>, second: List<Int>): List<Int> {
+        return first
+    }
 }
