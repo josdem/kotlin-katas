@@ -5,16 +5,17 @@ import org.junit.jupiter.api.Test
 
 class CharactersCounterTest {
 
+    private val nickname = "josdem"
     private val charactersCounter: CharactersCounter = CharactersCounter()
 
     @Test
     fun shouldCountVowels() {
-        assertEquals(2, charactersCounter.countVowels("josdem"))
+        assertEquals(2, charactersCounter.countVowels(nickname))
     }
 
     @Test
     fun shouldCountConsonants() {
-        assertEquals(4, charactersCounter.countConsonants("josdem"))
+        assertEquals(4, charactersCounter.countConsonants(nickname))
     }
 
 }
