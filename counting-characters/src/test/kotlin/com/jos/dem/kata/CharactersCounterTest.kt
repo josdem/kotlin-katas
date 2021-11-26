@@ -12,4 +12,9 @@ class CharactersCounterTest {
         assertEquals(2, charactersCounter.countVowels("josdem"))
     }
 
+    @Test
+    fun shouldCountConsonants() {
+        assertEquals(4, charactersCounter.countConsonants("josdem"))
+    }
+
 }
