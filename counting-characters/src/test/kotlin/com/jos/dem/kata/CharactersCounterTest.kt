@@ -16,12 +16,12 @@ class CharactersCounterTest {
     private val charactersCounter: CharactersCounter = CharactersCounter()
 
     @Test
-    fun shouldCountVowels() {
+    fun `should count vowels`() {
         assertEquals(2, charactersCounter.countVowels(nickname))
     }
 
     @Test
-    fun shouldCountConsonants() {
+    fun `should count consonants`() {
         assertEquals(4, charactersCounter.countConsonants(nickname))
     }
 
