@@ -9,7 +9,7 @@ class StringCompressorTest {
     @Test
     fun `should compress a string`() {
         val keyword = "aaabbbbcc"
-        val expectedString = "3a4b2c"
+        val expectedString = "a3b4c2"
         assertEquals(expectedString, stringCompressor.compress(keyword))
     }
 }
