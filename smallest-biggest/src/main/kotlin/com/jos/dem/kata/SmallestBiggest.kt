@@ -9,8 +9,10 @@ Then: I will get a collection with [2, 9] values
 
 class SmallestBiggest {
 
-    fun find(numbers: List<Number>): List<Number> {
-        return numbers
+    fun find(numbers: List<Int>): List<Int> {
+        val smallest = numbers.minOrNull()
+        val biggest = numbers.maxOrNull()
+        return listOf(smallest ?: 0, biggest ?: 0)
     }
 
 }
