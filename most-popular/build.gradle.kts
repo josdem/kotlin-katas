@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.5.31"
+    java
 }
 
 group = "com.jos.dem.kata"
@@ -11,9 +12,10 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
-tasks.withType<Test> {
+tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
