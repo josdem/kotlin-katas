@@ -1,5 +1,11 @@
 package com.jos.dem.kata
 
+/*
+Given: A string named keyword
+When: We call count character method
+Then: I count how many times this character appears in the keyword
+ */
+
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
