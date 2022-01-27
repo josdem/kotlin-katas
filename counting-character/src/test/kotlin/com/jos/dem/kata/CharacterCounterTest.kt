@@ -1,9 +1,9 @@
 package com.jos.dem.kata
 
 /*
-Given: A string named keyword
+Given: A string and a character
 When: We call count character method
-Then: I count how many times this character appears in the keyword
+Then: I count how many times this character appears in the string
  */
 
 import org.junit.jupiter.api.Assertions.assertEquals
