@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test
 
 class ParenthesesBalancerValidatorTest {
 
-    val validator: ParenthesesBalancerValidator = ParenthesesBalancerValidator()
+    private val validator: ParenthesesBalancerValidator = ParenthesesBalancerValidator()
 
     @Test
     fun `should check if keyword is balanced`() {
@@ -22,7 +22,7 @@ class ParenthesesBalancerValidatorTest {
 
     @Test
     fun `should validate keyword is not balanced`() {
-        val keyword = "(x()())"
+        val keyword = "((x()())"
         assertFalse(validator.isBalanced(keyword), "string is not balanced")
     }
 }
