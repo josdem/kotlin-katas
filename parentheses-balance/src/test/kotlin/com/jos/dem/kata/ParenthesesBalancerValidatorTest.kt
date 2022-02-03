@@ -3,7 +3,7 @@ package com.jos.dem.kata
 /**
  *  Given a string
  *  When I call isBalanced method
- *  Then Return a boolean indicating whether that string has balanced parentheses.
+ *  Then return a boolean indicating whether that string has balanced parentheses.
  */
 
 import org.junit.jupiter.api.Assertions.assertFalse
