@@ -1,8 +1,8 @@
 package com.jos.dem.kata
 
 /*
-It is your birthday! And you want to make it special, so you want to keep only biggest candles in the cake
-Your task is to create a function that removes all small candles and just keep the biggest ones.
+It is your birthday! And you want to make it special, so you want to keep only the biggest candles on the cake
+Your task is to create a function that removes all small candles and just keeps the biggest ones.
  */
 
 import org.junit.jupiter.api.Assertions.assertEquals
