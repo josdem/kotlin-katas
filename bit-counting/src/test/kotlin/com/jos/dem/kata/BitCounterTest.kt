@@ -1,5 +1,10 @@
 package com.jos.dem.kata
 
+/*
+Write a function that takes an integer as input and returns how many bits are equal to one in the binary representation.
+Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+ */
+
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
