@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+/*
+Given an integer collection return a sum of its elements
+ */
+
 class CollectionAdderTest {
 
     private val collectionAdder: CollectionAdder = CollectionAdder()
