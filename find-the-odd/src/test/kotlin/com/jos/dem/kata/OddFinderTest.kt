@@ -1,5 +1,11 @@
 package com.jos.dem.kata
 
+/*
+Given an array of integers
+When I call findIt method
+Then I validate it is the one that appears an odd number of times.
+ */
+
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -8,7 +14,7 @@ class OddFinderTest {
     private val oddFinder: OddFinder = OddFinder()
 
     @Test
-    fun `should find the odd`(){
+    fun `should find the odd`() {
         assertEquals(
             5, oddFinder.findIt(intArrayOf(20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5))
         )
