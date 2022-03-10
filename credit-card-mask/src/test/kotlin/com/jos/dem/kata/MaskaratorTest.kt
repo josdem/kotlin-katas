@@ -1,5 +1,9 @@
 package com.jos.dem.kata
 
+/*
+Credit card information is important, therefore, you don't want that information to be all visible. Write a function named maskify, which changes all but the last four characters into #.
+ */
+
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -24,7 +28,8 @@ class MaskaratorTest {
         assertEquals("##ippy", maskarator.maskify("Skippy"))
         assertEquals(
             "####################################man!",
-            maskarator.maskify("Nananananananananananananananana Batman!"))
+            maskarator.maskify("Nananananananananananananananana Batman!")
+        )
     }
 
 }
