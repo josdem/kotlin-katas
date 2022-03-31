@@ -1,7 +1,7 @@
 package com.jos.dem.kata
 
 /*
-Given a number, collection find the first non-repeated number in that collection
+Given a numeric collection, find the first non-repeated number in that collection
 When we have: [25, 25, 18, 18, 18, 36, 1, 2, 2, 34] first non-repeated number is 36
  */
 
