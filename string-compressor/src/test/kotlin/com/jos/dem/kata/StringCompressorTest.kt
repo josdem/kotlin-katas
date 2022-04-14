@@ -2,7 +2,7 @@ package com.jos.dem.kata
 
 /*
 Given a string "aaabbbbcc"
-When we call compress method
+When we call the compress method
 Then we have a compressed string like "a3b4c2"
  */
 
