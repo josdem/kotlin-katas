@@ -5,3 +5,4 @@
 **settings.gradle.kts
 **/gradlew
 **/gradlew.bat
+**bin/
