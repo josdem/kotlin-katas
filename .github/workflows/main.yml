@@ -26,5 +26,7 @@ jobs:
       - name: Execute common elements tests
         run: cd ${{ github.workspace }}/common-elements && ./gradlew test
       - name: Execute counting character tests
-        run: cd ${{ github.workspace }}/counting character && ./gradlew test
+        run: cd ${{ github.workspace }}/counting-character && ./gradlew test
+      - name: Execute counting characters tests
+        run: cd ${{ github.workspace }}/counting-characters&& ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
