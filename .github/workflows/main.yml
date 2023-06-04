@@ -23,4 +23,6 @@ jobs:
         run: cd ${{ github.workspace }}/bit-counting && ./gradlew test
       - name: Execute collection sum tests
         run: cd ${{ github.workspace }}/collection-sum && ./gradlew test
+      - name: Execute common elements tests
+        run: cd ${{ github.workspace }}/common-elements && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
