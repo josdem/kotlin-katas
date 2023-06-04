@@ -31,4 +31,6 @@ jobs:
         run: cd ${{ github.workspace }}/counting-characters && ./gradlew test
       - name: Execute counting-numbers tests
         run: cd ${{ github.workspace }}/counting-numbers && ./gradlew test
+      - name: Execute create-phone-number tests
+        run: cd ${{ github.workspace }}/create-phone-number && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
