@@ -45,4 +45,6 @@ jobs:
         run: cd ${{ github.workspace }}/find-the-odd && ./gradlew test
       - name: Execute first non repeated tests
         run: cd ${{ github.workspace }}/first-non-repeated && ./gradlew test
+      - name: Execute hero vs dragons tests
+        run: cd ${{ github.workspace }}/hero-vs-dragons && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
