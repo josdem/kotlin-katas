@@ -43,4 +43,6 @@ jobs:
         run: cd ${{ github.workspace }}/electronic-shop && ./gradlew test
       - name: Execute find the odd tests
         run: cd ${{ github.workspace }}/find-the-odd && ./gradlew test
+      - name: Execute first non repeated tests
+        run: cd ${{ github.workspace }}/first-non-repeated && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
