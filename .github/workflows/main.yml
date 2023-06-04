@@ -53,4 +53,6 @@ jobs:
         run: cd ${{ github.workspace }}/most-popular && ./gradlew test
       - name: Execute parentheses balance tests
         run: cd ${{ github.workspace }}/parentheses-balance && ./gradlew test
+      - name: Execute smallest biggest tests
+        run: cd ${{ github.workspace }}/smallest-biggest && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
