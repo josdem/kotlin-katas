@@ -57,4 +57,6 @@ jobs:
         run: cd ${{ github.workspace }}/smallest-biggest && ./gradlew test
       - name: Execute sort the odd tests
         run: cd ${{ github.workspace }}/sort-the-odd && ./gradlew test
+      - name: Execute square calculator tests
+        run: cd ${{ github.workspace }}/square-calculator && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
