@@ -37,4 +37,6 @@ jobs:
         run: cd ${{ github.workspace }}/credit-card-mask && ./gradlew test
       - name: Execute digital sum tests
         run: cd ${{ github.workspace }}/digital-sum && ./gradlew test
+      - name: Execute disem vowel trolls tests
+        run: cd ${{ github.workspace }}/disem-vowel-trolls && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
