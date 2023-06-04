@@ -41,4 +41,6 @@ jobs:
         run: cd ${{ github.workspace }}/disem-vowel-trolls && ./gradlew test
       - name: Execute electronic shop tests
         run: cd ${{ github.workspace }}/electronic-shop && ./gradlew test
+      - name: Execute find the odd tests
+        run: cd ${{ github.workspace }}/find-the-odd && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
