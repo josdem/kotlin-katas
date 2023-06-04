@@ -21,4 +21,6 @@ jobs:
         run: cd ${{ github.workspace }}/biggest-price && ./gradlew test
       - name: Execute bit counting tests
         run: cd ${{ github.workspace }}/bit-counting && ./gradlew test
+      - name: Execute collection sum tests
+        run: cd ${{ github.workspace }}/collection-sum && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
