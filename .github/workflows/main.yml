@@ -19,4 +19,6 @@ jobs:
         run: cd ${{ github.workspace }}/array-diff && ./gradlew test
       - name: Execute biggest price tests
         run: cd ${{ github.workspace }}/biggest-price && ./gradlew test
+      - name: Execute bit counting tests
+        run: cd ${{ github.workspace }}/bit-counting && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
