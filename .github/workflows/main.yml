@@ -28,5 +28,7 @@ jobs:
       - name: Execute counting character tests
         run: cd ${{ github.workspace }}/counting-character && ./gradlew test
       - name: Execute counting characters tests
-        run: cd ${{ github.workspace }}/counting-characters&& ./gradlew test
+        run: cd ${{ github.workspace }}/counting-characters && ./gradlew test
+      - name: Execute counting-numbers tests
+        run: cd ${{ github.workspace }}/counting-numbers && ./gradlew test
       - run: echo "🍏 This job's status is ${{ job.status }}."
